@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFQ8M0VSFN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RFQ8M0VSFN');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Formatter, Validator &amp; Tree Visualizer — Gamility Tools</title>
+  <meta name="description" content="Free online client-side JSON formatter, beautifier, minifier, interactive tree viewer, and syntax error validator. 100% private.">
+  <meta name="keywords" content="json formatter, json beautifier, json validator, json tree view, json minifier, format json, json repair, json parser online">
+  <meta name="theme-color" content="#090e1a">
+    <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JSON Formatter, Validator &amp; Tree Visualizer — Gamility Tools">
+  <meta property="og:description" content="Free online client-side JSON formatter, beautifier, minifier, interactive tree viewer, and syntax error validator. 100% private.">
+  <meta property="og:image" content="preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="JSON Formatter, Validator &amp; Tree Visualizer — Gamility Tools">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JSON Formatter, Validator &amp; Tree Visualizer — Gamility Tools">
+  <meta name="twitter:description" content="Free online client-side JSON formatter, beautifier, minifier, interactive tree viewer, and syntax error validator. 100% private.">
+  <meta name="twitter:image" content="preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Return Ribbon -->
+  <header class="top-nav-ribbon" role="banner">
+    <div class="ribbon-container">
+      <div class="ribbon-left">
+        <a href="https://mahesh-yennam.github.io/Gamility/" class="ribbon-brand" title="Gamility Home">
+          <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+            <path d="M6 12h4m-2-2v4m7-3h.01m3 2h.01"></path>
+          </svg>
+          <span class="brand-name">Gamility</span>
+          <span class="brand-badge">Tools</span>
+        </a>
+      </div>
+      <div class="ribbon-right">
+        <a href="https://mahesh-yennam.github.io/Gamility/tools.html" class="ribbon-back-btn" title="Return to Utility Tools Hub">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Tools</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main App Shell -->
+  <main class="app-main" id="main-content">
+    <div class="app-container">
+
+      <!-- Tool Header -->
+      <header class="tool-hero">
+        <div class="hero-header-row">
+          <div class="hero-title-group">
+            <div class="tool-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Developer &amp; Data Utility</span>
+            </div>
+            <h1 class="hero-title">JSON Formatter, Validator &amp; Tree Visualizer</h1>
+            <p class="hero-desc">Format, minify, validate, repair, and explore complex JSON data structures with instant syntax error diagnostics.</p>
+          </div>
+          <div class="privacy-pill" title="All JSON processing is executed strictly in client memory.">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>100% In-Browser &amp; Private</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Master Card -->
+      <section class="editor-master-card">
+
+        <!-- Top Master Toolbar -->
+        <div class="master-toolbar">
+          
+          <!-- Actions Group -->
+          <div class="toolbar-actions-left" role="toolbar" aria-label="JSON operations toolbar">
+            <div class="btn-group-indent">
+              <button class="tool-btn active-indent" id="btn-format-2" type="button" title="Format with 2-space indentation">Format (2s)</button>
+              <button class="tool-btn" id="btn-format-4" type="button" title="Format with 4-space indentation">Format (4s)</button>
+              <button class="tool-btn" id="btn-format-tab" type="button" title="Format with tab indentation">Tab</button>
+            </div>
+            <button class="tool-btn" id="btn-minify" type="button" title="Minify and compress JSON">Compact</button>
+            <button class="tool-btn btn-highlight" id="btn-repair" type="button" title="Auto-repair single quotes, trailing commas, and unquoted keys">🪄 Repair</button>
+            <button class="tool-btn" id="btn-sample" type="button" title="Load rich sample JSON payload">✨ Sample</button>
+            <label class="tool-btn btn-upload-label" for="file-upload" title="Upload .json or .txt file">
+              📁 Upload
+              <input type="file" id="file-upload" accept=".json,.txt" class="visually-hidden">
+            </label>
+          </div>
+
+          <!-- View Controls Group -->
+          <div class="toolbar-actions-right">
+            <div class="validation-status-pill status-valid" id="validation-pill">
+              <span class="status-indicator-dot"></span>
+              <span id="validation-text">Valid JSON</span>
+            </div>
+            <div class="view-switch-pills">
+              <button class="view-pill active" data-view="split" type="button" title="Side-by-side Editor &amp; Tree View">Split</button>
+              <button class="view-pill" data-view="code" type="button" title="Code Editor Only">Code</button>
+              <button class="view-pill" data-view="tree" type="button" title="Interactive Tree View Only">Tree</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Split / Dynamic Workspace -->
+        <div class="split-workspace view-split" id="split-workspace">
+
+          <!-- Left Pane: JSON Source Textarea & Line Numbers -->
+          <div class="pane pane-editor" id="pane-editor">
+            <div class="pane-header">
+              <div class="pane-header-left">
+                <span class="pane-title">JSON Source</span>
+                <span class="pane-meta" id="editor-line-col">Line 1, Col 1</span>
+              </div>
+              <div class="pane-header-actions">
+                <button class="pane-mini-btn" id="btn-clear-input" type="button" title="Clear input">Clear</button>
+              </div>
+            </div>
+
+            <div class="editor-body-wrapper" id="editor-wrapper">
+              <textarea 
+                id="json-input" 
+                class="json-textarea" 
+                placeholder="Paste, type, or drag-and-drop your JSON here..."
+                spellcheck="false"
+                aria-label="JSON Input"
+              ></textarea>
+            </div>
+
+            <!-- Error Banner (Shown when JSON is invalid) -->
+            <div class="error-banner hidden" id="error-banner">
+              <div class="error-header">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <strong id="error-title">Syntax Error: Unexpected token</strong>
+                <span class="error-coords" id="error-coords">Line 1, Col 1</span>
+              </div>
+              <div class="error-snippet" id="error-snippet"></div>
+              <div class="error-help" id="error-help">Click "🪄 Repair" above to automatically resolve common syntax issues.</div>
+            </div>
+          </div>
+
+          <!-- Right Pane: Interactive Collapsible Tree View -->
+          <div class="pane pane-tree" id="pane-tree">
+            <div class="pane-header">
+              <div class="pane-header-left">
+                <span class="pane-title">Interactive Tree Visualizer</span>
+              </div>
+              <div class="pane-header-actions tree-controls">
+                <div class="tree-search-wrapper">
+                  <input type="text" id="tree-search" class="tree-search-input" placeholder="Filter keys/values..." aria-label="Filter tree">
+                  <button class="tree-search-clear hidden" id="btn-clear-search" type="button" title="Clear filter">&times;</button>
+                </div>
+                <button class="pane-mini-btn" id="btn-expand-all" type="button" title="Expand all tree nodes">▾ Expand</button>
+                <button class="pane-mini-btn" id="btn-collapse-all" type="button" title="Collapse all tree nodes">▸ Collapse</button>
+              </div>
+            </div>
+
+            <div class="tree-body-wrapper" id="tree-body">
+              <div class="tree-container" id="tree-root">
+                <!-- Tree nodes generated dynamically -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Master Bottom Status & Metrics Bar -->
+        <div class="editor-bottom-bar">
+          
+          <!-- Live Metrics -->
+          <div class="document-stats">
+            <div class="stat-pill"><span id="stat-size">0 B</span> size</div>
+            <div class="stat-pill"><span id="stat-nodes">0</span> nodes</div>
+            <div class="stat-pill"><span id="stat-keys">0</span> keys</div>
+            <div class="stat-pill"><span id="stat-arrays">0</span> arrays</div>
+            <div class="stat-pill"><span id="stat-depth">0</span> depth</div>
+          </div>
+
+          <!-- Export & Action Buttons -->
+          <div class="footer-actions">
+            <button class="tool-btn" id="btn-copy-formatted" type="button">Copy Formatted</button>
+            <button class="tool-btn" id="btn-copy-minified" type="button">Copy Minified</button>
+            <button class="tool-btn" id="btn-download" type="button">⬇ Download .json</button>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Platform Footer -->
+      <footer class="tool-footer">
+        <p class="footer-copy">Copyright &copy; 2026 Gamility. All rights reserved. &bull; 100% In-Browser JSON Engine</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

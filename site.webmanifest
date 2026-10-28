@@ -1,0 +1,16 @@
+{
+  "name": "JSON Formatter & Validator — Gamility Tools",
+  "short_name": "JSON Studio",
+  "description": "Fast, private, client-side JSON beautifier, minifier, interactive tree viewer, and syntax validator.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090e1a",
+  "theme_color": "#090e1a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

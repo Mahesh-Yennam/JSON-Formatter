@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="jsonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#06b6d4" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="64" height="64" rx="14" fill="#090e1a"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#jsonGrad)" stroke-width="2" stroke-opacity="0.8"/>
+  
+  <!-- Stylized Curly Braces { } with JSON node dots -->
+  <g filter="url(#glow)">
+    <!-- Left Brace { -->
+    <path d="M22 17 C16 17 15 22 15 27 C15 30 11 32 9 32 C11 32 15 34 15 37 C15 42 16 47 22 47" 
+          fill="none" stroke="#10b981" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right Brace } -->
+    <path d="M42 17 C48 17 49 22 49 27 C49 30 53 32 55 32 C53 32 49 34 49 37 C49 42 48 47 42 47" 
+          fill="none" stroke="#06b6d4" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Central Key-Value Dots / Structure indicator -->
+    <circle cx="26" cy="27" r="2.2" fill="#38bdf8"/>
+    <circle cx="38" cy="27" r="2.2" fill="#38bdf8"/>
+    <rect x="24" y="35" width="16" height="3" rx="1.5" fill="#f59e0b"/>
+  </g>
+</svg>
